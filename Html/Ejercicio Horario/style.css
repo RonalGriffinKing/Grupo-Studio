@@ -1,0 +1,19 @@
+.tabla{
+    border: 5px solid;
+    border-color: aqua;
+    border-radius: 10px;
+    text-align: center;
+    width: 600px;
+}
+
+th{
+    border:0px;
+}
+
+td{
+
+border: 2px solid;
+
+    
+}
+

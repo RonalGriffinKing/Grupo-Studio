@@ -1,0 +1,31 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+#carta{
+    background-color: #736a2c;
+    border: 1px solid;
+    height: 500px;
+    width: 80%;
+    border-radius: 15px;
+    padding:0 20px;
+}
+
+#carta span{
+    color: white;
+    font-size: 25px;
+    font-family: sans-serif;
+   
+}
+#carta img{
+width: 100%;
+
+
+}
+
+#principal{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}

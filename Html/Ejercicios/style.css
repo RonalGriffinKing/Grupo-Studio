@@ -1,0 +1,51 @@
+.parrafo{
+
+border: 1px solid red;
+
+}
+
+#titulo{
+
+    color: pink;
+    font-size: 30px;
+}
+
+span{
+    font-weight: bold ;
+    text-decoration: underline;
+    color: aquamarine;
+}
+
+#field1{
+    color: tomato;
+    text-align: center;
+    font-size: 30px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border-radius: 20px;
+    border: 1px solid ;
+    width: 500px;
+    background-color:antiquewhite
+}
+
+fieldset{
+    background-color:aquamarine;
+    border-radius:20px;
+    border:0px;
+    width: 600px;
+    height: 600px;
+    padding: 20px;
+    margin: auto;
+
+}
+
+.btn{
+    width: 150px;
+    height: 50px;
+    border-radius: 20px;
+    border: 0px;
+    background-color: cadetblue;
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+
+}

@@ -1,0 +1,56 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    background-color:#331832;
+    padding-top: 20px;
+}
+h1{
+    color:white;
+    text-align: center;
+}
+
+#caja{
+    width: 700px;
+    height: 600px;
+    margin: auto;
+    background-color:#35bf9f;
+    padding-top: 20px;
+    border-radius: 20px;
+}
+
+
+#fieldset1{
+    background-color:#331832 ;
+    width: 400px;
+    height: 200px;
+    border-radius:20px;
+    color: white;
+    padding: 40px;
+    font-size: 30px;
+    margin: auto;
+    
+}
+
+#fieldset1 label{
+    text-align: justify;
+    font-size: 15px;
+}
+
+#fieldset2{
+    background-color:#331832;
+    width: 400px;
+    height: 150px;
+    border-radius: 20px;
+    text-align: justify;
+    color: white;
+    padding: 40px;
+    font-size: 30px;
+    margin: auto;
+}
+
+#fieldset2 label{
+font-size: 15px;
+}
