@@ -1,25 +1,34 @@
 *{
     margin: 0px;
     padding: 0px;
+    font-family: Agbalumo;
+
 }
+
 #carta{
     background-color: #736a2c;
     border: 1px solid;
-    height: 500px;
+    height: auto;
     width: 80%;
     border-radius: 15px;
     padding:0 20px;
+    background-color:#736a2c;background-image:url(http://www.zingerbugimages.com/backgrounds/purple_stars.gif);background-position:top left;background-repeat:repeat;background-attachment:fixed;
+   
 }
+
 
 #carta span{
     color: white;
-    font-size: 25px;
-    font-family: sans-serif;
-   
+    font-size: 18px;
+    font-family: Agbalumo;;
 }
-#carta img{
-width: 100%;
 
+#carta img{
+width: 99%;
+background-image: radial-gradient(circle at 50% -20.71%, #cbe7e1 0, #cae7e3 6.25%, #c9e7e6 12.5%, #c9e7e8 18.75%, #c9e7eb 25%, #c9e7ed 31.25%, #cae6ef 37.5%, #cbe6f1 43.75%, #cde5f2 50%, #cfe4f3 56.25%, #d1e4f4 62.5%, #d4e3f5 68.75%, #d7e2f5 75%, #dae1f5 81.25%, #dde0f4 87.5%, #e0e0f4 93.75%, #e3dff2 100%);
+
+border: 3px solid;
+border-image: linear-gradient(45deg,gray,white) 10;
 
 }
 
@@ -28,4 +37,81 @@ width: 100%;
     justify-content: center;
     align-items: center;
     height: 100vh;
+}
+
+#cabecera{
+    
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+    padding: 8px 0;
+}
+
+#descripcion div{
+display: flex;
+justify-content: space-between;
+align-items:center;
+
+}
+
+#descripcion span{
+font-size: 15px;
+}
+
+#texto{
+    background-image: radial-gradient(circle at 50% -20.71%, #cbe7e1 0, #cae7e3 6.25%, #c9e7e6 12.5%, #c9e7e8 18.75%, #c9e7eb 25%, #c9e7ed 31.25%, #cae6ef 37.5%, #cbe6f1 43.75%, #cde5f2 50%, #cfe4f3 56.25%, #d1e4f4 62.5%, #d4e3f5 68.75%, #d7e2f5 75%, #dae1f5 81.25%, #dde0f4 87.5%, #e0e0f4 93.75%, #e3dff2 100%);
+    padding: 5px;
+    border: 5px solid;
+    border-image: linear-gradient(45deg,gray,white) 10;
+
+}
+#Pie div{
+    display: flex;
+    justify-content: end;
+    align-items:center;
+    
+}
+
+#ilustre{
+    margin-top: 10px;
+    color:white;
+}
+#Pie div p{
+    margin-top: 1px;
+    color:white;
+    margin-left: auto;
+    font-size: 15px;
+}
+
+#Uno{
+    background-color:gray;
+    padding:4px 6px 4px 6px;
+    text-align: center;
+    border-radius:100%
+
+}
+
+#Dos{
+    background-color:rgb(11, 227, 238);
+    padding:4px 6px 4px 6px;
+    text-align: center;
+    border-radius:100%
+
+}
+#Tres{
+    background-color:yellow;
+    padding:4px 6px 4px 6px;
+    text-align: center;
+    border-radius:100%
+
+}
+#Cuatro{
+    background-color:red;
+    padding:4px 6px 4px 6px;
+    text-align: center;
+    border-radius:100%
+
+}
+#Cinco{
+   color:red;
 }
