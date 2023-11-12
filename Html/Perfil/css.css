@@ -126,7 +126,6 @@ body {
     font-family: Varela Round;
 }
 .intereses p {
-    
     text-align: left;
     color: white;
     font-size: 80%;
@@ -136,7 +135,7 @@ body {
 
 #Inter{
     width: 100%;
-
+    margin-top: 20px;
 }
 
 
@@ -218,7 +217,7 @@ body {
 
 .txta {
     font-family: Varela Round;
-    width: 40%;
+    width: 60%;
     padding: 1% 1% 1%;
     border: 0px;
     border-radius: 5px;
