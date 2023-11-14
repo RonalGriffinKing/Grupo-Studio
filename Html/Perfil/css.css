@@ -3,19 +3,52 @@
     padding: 0;
 }
 
-body {
-    margin-top: 20px;
-    margin-bottom: 50px;
-    background-image: url(./img/IMG_0543.PNG);
+
+
+.parallax {
+  /* The image used */
+  background-image: url("img/IMG_0217.PNG");
+
+  /* Set a specific height */
+  min-height: 500px;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-size: 100% 100%;
+  backdrop-filter: blur(5px);
+}
+
+
+
+.parallax2 {
+    /* The image used */
+    background-image: url("img/IMG_0215.PNG");
+  
+    /* Set a specific height */
+    min-height: 500px;
+  
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     background-size: 100% 100%;
-    background-position: bottom;
-    -webkit-backdrop-filter: blur(2px);
-    backdrop-filter: blur(5px);
-
 }
 
+.avatar {
+	width: 150px;
+	height: 150px;
+	box-sizing: border-box;
+	border-radius: 50%;
+	overflow: hidden;
+	box-shadow: 50px 5px 15px 0px rgba(0,0,0,0.6);
+	transform: translatey(0px);
+	animation: float 4s ease-in-out infinite;
+	img { width: 100%; height: auto; }
+}
 #principal {
     
     width: 100%;
@@ -26,8 +59,7 @@ body {
 }
 
 #foto {
-    width: 120px;
-    height: 120px;
+
     background: url(./img/Foto1.jpg);
     background-size: 100% 100%;
     background-repeat: no-repeat;
@@ -49,9 +81,24 @@ body {
     animation: cubic-bezier(0.445, 0.05, 0.55, 0.95);
 }
 
+@keyframes float {
+	0% {
+		box-shadow: 0 5px 15px 0px rgba(255, 0, 0, 0.6);
+		transform: translatey(0px);
+	}
+	50% {
+		box-shadow: 0 25px 15px 0px rgba(232, 11, 228, 0.2);
+		transform: translatey(-20px);
+	}
+	100% {
+		box-shadow: 0 5px 15px 0px rgba(234, 0, 0, 0.6);
+		transform: translatey(0px);
+	}
+}
+
 #titulo {
     font-family: Pacifico;
-    font-size: 30px;
+    font-size: 50px;
     color: rgb(36, 7, 7);
 }
 
@@ -67,12 +114,17 @@ body {
     flex-direction: column;
     align-items: center;
     text-align: center;
+    margin-top: 100px;
+    margin-bottom: 50px;
+    height: 100%;
 }
 
 #center-center {
     display: flex;
     justify-content: space-between;
-    width: 70%;
+    width: 100%;
+    background-image:url(./img/IMG_0215.PNG);
+    -webkit-backdrop-filter: blur(10px);
 }
 
 #center-down {
@@ -80,17 +132,23 @@ body {
     justify-content: center;
     align-items: end;
     width: 100%;
+    
+    
 }
 
 #center-head span {
-    width: 60%;
+    width: 80%;
     color: rgb(0, 0, 0);
-    font-size: 90%;
+    font-size: 25px;
     font-family: Varela Round;
+    text-align: justify;
 }
 
 .datos {
     width: 100%;
+    display: flex;
+    justify-content: start;
+    flex-direction: column;
     background: rgba(10, 9, 9, 0.453);
     -webkit-backdrop-filter: blur(10px);
     border-radius: 5px;
@@ -102,25 +160,28 @@ body {
 }
 
 .datos p {
-    margin-top: 20px ;
+    margin: auto;
     text-align: left;
     color: white;
     font-size: 100%;
     font-family: Varela Round;
 }
 
-.datos h3 {
+.datos h3 { 
     text-align: center;
     color: white;
     font-family: Varela Round;
 }
 .intereses  {
     width: 100%;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    margin: 1%;
     padding: 1%;
     background: rgba(10, 9, 9, 0.453);
     -webkit-backdrop-filter: blur(10px);
     border-radius: 5px;
-    margin: 1%;
     color: rgb(36, 7, 7);
     font-size: 90%;
     font-family: Varela Round;
@@ -128,14 +189,13 @@ body {
 .intereses p {
     text-align: left;
     color: white;
-    font-size: 80%;
+    font-size: 100%;
     font-family: Varela Round;
 }
 
 
 #Inter{
     width: 100%;
-    margin-top: 20px;
 }
 
 
@@ -179,6 +239,9 @@ body {
 #contacto {
     width: 100%;
     height: 100%;
+    margin-top: 10%;
+    margin-bottom:10% ;
+
     display: flex;
     justify-content: center;
     align-items: center;
@@ -190,6 +253,7 @@ body {
 #contacto h3 {
     font-family: Varela Round;
     color: white;
+    font-size: 30px;
 }
 
 #contacto form {
