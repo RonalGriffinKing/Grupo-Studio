@@ -18,7 +18,9 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-size: 100% 100%;
-  backdrop-filter: blur(5px);
+  backdrop-filter: blur(100px);
+
+  -webkit-backdrop-filter: blur(10px);
 }
 
 
@@ -62,7 +64,7 @@
 #foto:hover {
     width: 150px;
     height: 150px;
-    background: url(ttps://i.ibb.co/P96s9wp/Foto1.jpg);
+    background: url(https://i.ibb.co/P96s9wp/Foto1.jpg);
     background-size: 100% 100%;
     background-repeat: no-repeat;
     background-size: cover;
@@ -70,6 +72,7 @@
     box-shadow: 0px 0px 0px 10px rgb(36, 7, 7);
     animation: cubic-bezier(0.445, 0.05, 0.55, 0.95);
 }
+
 
 .foto {
 	width: 150px;
@@ -109,6 +112,10 @@
     flex-direction: column;
     align-items: center;
     text-align: center;
+    backdrop-filter: blur(10px);
+
+  
+  
 }
 
 #center-head {
@@ -134,6 +141,7 @@
     justify-content: center;
     align-items: end;
     width: 100%;
+    backdrop-filter: blur(10px);
     
     
 }
@@ -165,7 +173,7 @@
     margin: auto;
     text-align: left;
     color: white;
-    font-size: 100%;
+    font-size: 150%;
     font-family: Varela Round;
 }
 
@@ -333,3 +341,19 @@ textarea {
     resize: none;
     
 }
+
+.flotante{
+    display: none;
+	padding:25px;
+	background:#6668687a;
+	font-size:20px;
+	color:#ffffff;
+    border-radius:100%;
+	cursor:pointer;
+	position: fixed;
+	bottom:20px;
+	right:20px;
+    animation:;
+    transition: 0.3s;
+}
+
