@@ -7,7 +7,7 @@
 
 .parallax {
   /* The image used */
-  background-image: url("img/IMG_0217.PNG");
+  background-image: url(https://i.ibb.co/VxWkZxj/IMG-0217.png);
 
   /* Set a specific height */
   min-height: 500px;
@@ -25,7 +25,7 @@
 
 .parallax2 {
     /* The image used */
-    background-image: url("img/IMG_0215.PNG");
+    background-image: url(https://i.ibb.co/ypMYkv2/IMG-0215.png);
   
     /* Set a specific height */
     min-height: 500px;
@@ -50,7 +50,7 @@
 
 #foto {
 
-    background: url(./img/Foto1.jpg);
+    background: url(https://i.ibb.co/P96s9wp/Foto1.jpg);
     background-size: 100% 100%;
     background-repeat: no-repeat;
     background-size: cover;
@@ -62,7 +62,7 @@
 #foto:hover {
     width: 150px;
     height: 150px;
-    background: url(./img/Foto1.jpg);
+    background: url(ttps://i.ibb.co/P96s9wp/Foto1.jpg);
     background-size: 100% 100%;
     background-repeat: no-repeat;
     background-size: cover;
