@@ -1,0 +1,24 @@
+Position:
+
+1. Tiene Fixed: fijar el elemento en una posicion especifica, eso ayuda a que no se mueva.
+
+2. tiene Relative:se ocupa en contenedores:Top 0 es el top con cordenada y 100 para decir que es el final: Left tambien 0 y 100 
+
+3. Tiene absolute: ignora los restos de elementos exteriores, ese elemnto puedo moverlo en cualquier parte de la web, ignora la estructura creada pero si lo agregamos dentro de un div que tiene posision relativa, le hace caso a ese div y puede moverse dentro de ese div
+
+la propiedad para dejarla por defecto es inferic
+
+.div{
+    position: relative;
+    left: 50%;
+    top: 100%;
+}
+.hola{
+     position: absolute;
+    left: 50%;
+    top: 100%;
+    z-index:-1;
+}
+
+z-inex nos permite mover el div o la capa atras del otro div es como canva me encanta
+pero tiene que tener position.
