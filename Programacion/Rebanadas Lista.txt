@@ -1,0 +1,31 @@
+Una lista la puedes recorrer de muchas formas, incluso puedes copiarlar clonarla y si quieres puesdes solo traer ciertas partes de una lista
+
+my_list=[10,8,3,53,12,56]
+new_list=my_list[:]  asi lo hago asi clonare toda la lista
+
+new_listt=my_list[1:4] solo me copiara los numeros que estan en el indice que indique y los de entremedio resultado 8,3,53,12  
+
+tambien podemos recorela alreves usando  -1
+
+Operadores de una lista:
+
+in 
+not in
+
+print(5 in my_list)= imprimiria True o False este revisa si ese numero esta en la lista es perfecto para hacer que no ingresen numero iguales, funcina siempre en objetos iterables o clecciones de datos 
+
+print(5 not in my_list) = lo mismo pero en negacion si no esta el 5 en mi lista devovlera true o false y con eso podemos hacer un verificador
+
+
+tambien sirve para revisar caracteres
+
+print(“a” in “fsdahdjsashaja”) dira true porque si hay una a pero hay muchas entonces no sabriamos en que posicion esta
+
+se puede iterar los string de esta forma print(“Hola”[1]) resultado sewria la letra en el indice 1 que es O 
+
+hacer una lista rapidaa
+print(list(10))
+el resultado seria [“0”,”1”,”2”,”3”,”4”,”5”,”6”,”7”,”8”,”9”,]
+
+
+
