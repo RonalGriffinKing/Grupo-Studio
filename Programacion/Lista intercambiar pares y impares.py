@@ -1,15 +1,14 @@
-my_list=[1,2,3,4,5,6,7,8,9,10,1,2,3,4]
+my_list=[1,2,3,4,5,6,7,8,9,10,31,45,60,70]
 largo=len(my_list)
 lista_pares=[]
 lista_impares=[]
-print(my_list)
-for i in range(0,largo):
+for i in range(largo):
     if my_list[i]%2==0:
-        lista_pares.append(my_list[i])
+        lista_pares.append(i)
     else:
-        lista_impares.append(my_list[i])
-for i in range(largo//2):
+        lista_impares.append(i)
+
+for i in range(len(my_list)//2):
     my_list[lista_pares[i]],my_list[lista_impares[i]]=my_list[lista_impares[i]],my_list[lista_pares[i]]
+
 print(my_list)
-print("la lista de pares es:",lista_pares)
-print("la lista de impares es:",lista_impares)
