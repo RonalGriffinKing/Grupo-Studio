@@ -13,3 +13,5 @@ print(palabra1)
 print(palabra_central)
 print(palabra_final)
 print(palabra_final+"("+palabra_central+")"+palabra1)
+
+
