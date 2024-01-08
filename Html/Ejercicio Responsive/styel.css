@@ -1,0 +1,177 @@
+*{
+    margin: 0;
+    padding: 0;
+
+}
+
+
+h1{
+    font-family: 'Pacifico', cursive;
+    font-size:40px;
+    text-align:center ;
+    color:#500d0d;
+}
+
+h2{
+    font-family: 'Pacifico', cursive;
+    font-size:40px;
+    text-align:center ;
+    color: white;
+}
+
+head{
+text-align: center;
+width: 100%;
+}
+        
+#principal{
+width: 100%;
+display: flex;
+justify-content: space-around;
+align-items: center;
+flex-direction: column;
+
+}
+    
+#izquierda{
+width: 100%;
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction:column;
+}
+#logo{
+width: 50px;
+}
+
+p{
+width: 80%;
+padding: 10px;
+margin: 10px;
+font-size: 15px;
+text-align: justify;
+}
+
+#imagen{
+    width: 80%;
+}    
+
+#derecha{
+
+width: 90%;
+padding: 5%;
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+background:#44381f
+
+}
+#derecha img{
+display: none;
+}
+
+#derecha form{
+border-radius: 10px;
+background-color: #969592a8;
+width: 100%;
+text-align: center;
+backdrop-filter: blur(10px);
+backdrop-filter:opacity(100%);
+}
+
+
+.input{
+width: 80%;
+padding: 10px;
+margin: 10px;
+border-radius: 10px;
+border: 1px solid black;
+}
+.boton{
+width: 80%;
+padding: 10px;
+margin: 10px;
+color: white;
+border-radius: 10px;
+border: 0px;
+background-color:black
+}
+
+@media screen and (min-width: 1080px) {
+    
+    h1{
+        font-family: 'Pacifico', cursive;
+        font-size:40px;
+        text-align:center ;
+        color:#500d0d;
+    }
+    
+    h2{
+        font-family: 'Pacifico', cursive;
+        font-size:40px;
+        text-align:center ;
+        color: white;
+    }
+    
+    head{
+    text-align: center;
+    width: 100%;
+    }
+            
+    #principal{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    }
+        
+    #izquierda{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction:column;
+    }
+    #logo{
+    width: 50px;
+    }
+    
+    p{
+    width: 80%;
+    padding: 10px;
+    margin: 10px;
+    font-size: 15px;
+    text-align: justify;
+    }
+    
+    #imagen{
+        width: 80%;
+    }    
+    
+    #derecha{
+    
+    width: 50%;
+    padding: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background:#44381f
+    
+    }
+    #derecha img{
+        display: unset;
+        width: 80%;
+    }
+    
+    #derecha form{
+    border-radius: 10px;
+    background-color: #969592a8;
+    width: 100%;
+    text-align: center;
+    backdrop-filter: blur(10px);
+    backdrop-filter:opacity(100%);
+    } 
+}
