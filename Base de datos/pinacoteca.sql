@@ -46,7 +46,7 @@ fecha varchar(30)
 );
 
 create table cuadros_hecenas(
-codigo int primary key auto_increment,
+ codigo int primary key auto_increment,
  nombre_hecenas varchar(30),
  nombre_cuadro varchar(30),
  foreign key (nombre_hecenas) references hecenas(nombre),
