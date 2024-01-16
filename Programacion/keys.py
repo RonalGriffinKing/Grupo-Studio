@@ -1,7 +1,5 @@
 import faker as f
-
 diccionario = {}
-
 for i in range(10):
     diccionario[i] = f.Faker().name()
 
@@ -26,3 +24,39 @@ for i in diccionario:
 diccionario.popitem()
 for i in diccionario:  
     print(diccionario[i])
+
+imten1 = diccionario.get(1)
+print("Extraciion con get de diccionario:",imten1)
+
+#Update de un diccionario
+diccionario.update({12:"Juan"})
+print(diccionario[12])
+
+#Otro diccionario revisar si esta en mi diccionario
+pol_esp_dictionary = {
+    "zamek" : "castillo",
+    "woda"  : "agua",
+    "gleba" : "tierra"
+    }
+
+if "zamek" in pol_esp_dictionary:
+    print("Si")
+else:
+    print("No")
+
+
+#Copiar diccionario
+pol_esp_dictionary = {
+    "zamek" : "castillo",
+    "woda"  : "agua",
+    "gleba" : "tierra"
+    }
+
+copy_dictionary = pol_esp_dictionary.copy()
+
+#Diccionario con items en español
+spanish_dictionary = {
+    "zamek": "castillo",
+    "woda": "agua",
+    "gleba": "tierra"
+}

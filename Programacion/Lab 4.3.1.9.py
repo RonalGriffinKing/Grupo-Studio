@@ -6,7 +6,7 @@ def is_prime(num):
             return False
     return True
 
-for i in range(1, 20):
+for i in range(1, 50):
 	if is_prime(i + 1):
 			print(i + 1, end=" ")
 print()
