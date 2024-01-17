@@ -105,6 +105,34 @@
     height: 30px;
     font-size: 20px;
 }
+.efecto{
+    color: grey;
+    cursor: pointer;
+}
+.efecto:hover{
+    color:#420505;
+    transition: 0.1s;
+}
+.efecto:active{
+    color: red;
+}
+ iframe{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    scrollbar-width: thin;
+    scrollbar-color:trasparent transparent;
+
+ }
+#Mensaje{
+    margin-top: 30px;
+    text-align: center;
+    font-size: 30px;
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+}
+
 #publicaciones{
     width: 100%;
     display: flex;
