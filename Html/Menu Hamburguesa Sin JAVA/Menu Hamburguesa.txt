@@ -1,0 +1,15 @@
+Simbolo ~ nos permite indicar que el estilo se aplicara a la hermanos que este a la misma altura ejemplo
+esto nos indica que se le aplicara el estilo a span que se encuentra en el html en la misma altura
+con altura nos referimos que se encuentra en la misma fila que el p
+
+html:
+
+<p>Hola</p>
+<span>Como</span>
+
+
+css
+P~span{
+
+
+}
