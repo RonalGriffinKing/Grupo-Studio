@@ -1,0 +1,62 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Titillium Web', sans-serif;
+    
+}
+section{
+    background-image: url('https://i.pinimg.com/originals/9d/c0/bb/9dc0bb31b72ecb3d73b88ff5071275c8.gif'); 
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 90vh;
+    width: 100%;
+}
+nav{
+    background-color: rgba(104, 137, 56, 0.732);
+    height: 80px;
+    width: 100%;
+}
+.caja-logo{
+    position: absolute;
+    padding: 20px 50px;
+}
+.logo{
+    height: 40px;
+    font-family: 'Titillium Web', sans-serif;
+    color: white;
+    
+}
+nav ul{
+    float: right;
+    margin-right: 20px;
+    list-style: none;/*para quitar los puntos de la lista*/
+    
+}
+nav ul li{
+    display: inline-block;/*para que se pongan uno al lado del otro*/
+    line-height: 80px;
+    margin: 0 5px;
+}
+nav ul li a{
+    color: white;
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 17px;
+    text-decoration: none;
+}
+nav ul li a:hover{
+    color: red;
+    transition: .5s;
+    text-decoration: underline;/*subrayado al pasar el cursor*/
+}
+.checkbtn{
+    font-size: 30px;
+    color: white;
+    float: right;
+    line-height: 80px; /*alineacion vertical*/
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;/*ocultar hamburguesa en pc y no en movil*/
+}
+#check{
+    display: none;
+}
