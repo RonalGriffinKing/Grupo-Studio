@@ -1,0 +1,8 @@
+@media only screen and (max-width: 768px) {
+    body{
+        background-image: url(https://i.pinimg.com/originals/9d/c0/bb/9dc0bb31b72ecb3d73b88ff5071275c8.gif);
+    }
+    p{
+        font-family: 'Titillium Web', sans-serif;
+    }
+}
