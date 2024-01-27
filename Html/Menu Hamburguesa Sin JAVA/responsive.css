@@ -10,7 +10,7 @@
       top: 80px;/*ocultar el menu al inciar*/
       left: -100%;/*ocultar el menu al inciar*/
       text-align: center;/*para que se pongan uno al lado del otro*/
-      transition: all .5s;/*para que se vea el menu*/
+      transition:  .5s;/*para que se vea el menu*/
     }
     nav ul li {
       display: block;
