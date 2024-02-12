@@ -9,9 +9,14 @@ SELECT nombre,fecha_nacimiento FROM alumno WHERE fecha_nacimiento > '1997/01/01'
 
 SELECT * FROM alumno WHERE id=1;
 
-#Devuelve todos los alumnos cuyo telefono 
+#Todos los alumnos con telefono 
 
-SELECT
+SELECT * from alumno where telefono=692735409;
+
+
+
+
+
 
 
 
