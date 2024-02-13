@@ -36,7 +36,48 @@ SELECT  * from alumno where fecha_nacimiento>='1994/01/01' and es_repetidor="no"
 
 --Todos los alumnos que no ncieron en 1998
 
+
+--Obtener todos los datos de los alumnos cuyo primer nomre es martinez, sanchez, o dominguez
+SELECT * from alumno where apellido1 in("Sanchez","Martinez","Dominguez")
  
+
+--Like
+
+SELECT * from alumno where apellido1 like "M%";
+SELECT * from alumno where apellido1 not like "M%";
+
+--#obtener todos los alumnos que tengan en su nombre una a
+SELECT * from alumno where apellido1 like "%a%";
+
+SELECT * from alumno where apellido1  like "%a%m%c%";
+
+
+-- los nombre de los alnumbos que tengan en su nombre 5 caracteres
+SELECT nombre from alumno where nombre  like "_____";
+
+-- Obtener todos los almnos cuya tercera letra es una N
+
+SELECT * from alumno where nombre like "__n%";
+
+
+-- Obtener todos los almnos cuya palabra tengo % 
+
+SELECT * from alumno where nombre like "A$%BC" escape "$";
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
