@@ -28,22 +28,42 @@
 
 #print("****Divisor de numeros****")
 
-#numero1=int(input("Ingresa el dividendo primero: "))
-#numero2=int(input("Ingresa el dividendo segundo: "))
+numero1=input("Ingresa el dividendo primero: ")
+numero2=input("Ingresa el dividendo segundo: ")
+salida=1
 
-#if numero1==0:
-#    print("No puedes dividir por 0")
-#elif numero2==0:
-#    print("No puedes divir por 0")
-#else:
-#    if numero1%numero2==0:
-#        division=numero1/numero2
-#        print(f"La division es exacta:{division}")
-#    else:
-#        division=numero1/numero23
-#        resto=numero1%numero2
-#        print(f"La division no es exacta. Cociente {division} Resto:{resto}")
- 
+while salida==1:
+       
+    for digito in numero1:
+            if digito=="," or digito==".":
+                print("no puedes dividir con decimal solo numero enteros.")
+                numero1=input("Ingresa el dividendo primero: ")
+            else:
+                continue
+    for digito in numero2:
+            if digito=="," or digito==".":
+                print("no puedes dividir con decimal solo numero enteros.")
+                numero2=input("Ingresa el dividendo segundo: ")
+            else:
+                 salida=salida+1
+
+numero1=int(numero1)
+numero2=int(numero2)
+if numero1==0:
+    print("No puedes dividir por 0")
+elif numero2==0:
+    print("No puedes divir por 0")
+else:
+    if numero1%numero2==0:
+        division=numero1//numero2
+        print(f"La division es exacta:{division}")
+    else:
+        division=numero1//numero2
+        resto=numero1%numero2
+        print(f"La division no es exacta. Cociente {division} Resto:{resto}")  
+    
+
+
 ####Ejerico 6
 
 #print("Comparador de numeros")
@@ -63,18 +83,34 @@
 #print("Comparador de años")
 #year_actual=int(input("En que año estamos?:"))
 #year_random=int(input("Escribe un año al azar:"))
-
 #if year_actual==year_random:
 #    print("Son el mismo año.")
 #else:
-
-#   if year_actual<year_random:
+#    if year_actual<year_random:
 #        cuanto_mayor=year_random-year_actual
-#        print(f"Para llegar al año {year_random} faltan {cuanto_mayor}")
-
-#    else:
+#
+#        if cuanto_mayor==1:
+#            print(f"Para llegar al año {year_random} falta {cuanto_mayor} año")
+#        else:
+#            print(f"Para llegar al año {year_random} faltan {cuanto_mayor} años")       
+#    elif year_actual>year_random:
 #        cuanto_mayor=year_actual-year_random
-#        print(f"Desde el año {year_random} han pasado {cuanto_mayor} años.")
+#        if cuanto_mayor==1:
+#            print(f"Desde el año {year_random} ha pasado {cuanto_mayor} año.")
+#        else:
+#          print(f"Desde el año {year_random} han pasado {cuanto_mayor} años.")
+
+
+
+
+        
+
+   
+
+
+
+
+
 
 #####Ejericio 8
 #print("Diga Sí para continuar")
@@ -88,7 +124,7 @@
 #        palabra=input("Desea continuar con el programa?")
     
 ######Ejericio 9
-#print("Confirme su contraseña:")
+#print("*****Confirme su contraseña*****")
 #contra=input("Ingrese su contraseña: ")
 #confirmacion=input("Confirme su contraseña: ")
 
@@ -101,11 +137,32 @@
 #    else:
 #        print("Las contraseñas no coinciden.")
 #        contra=input("Ingrese su contraseña: ")
-#       confirmacion=input("Confirme su contraseña: ")
+#        confirmacion=input("Confirme su contraseña: ")
 
+
+
+######Ejericio 9 extra modificado
+#print("*****Confirme su contraseña*****")
+#contra=input("Ingrese su contraseña: ")
+#confirmacion=input("Confirme su contraseña: ")
+#contador=0
+
+#while True:
+
+#    if contra==confirmacion:
+#        print("Contraseña confirmada")
+#        break
+#    else:
+#        print("Las contraseñas no coinciden.")
+#        contador=contador+1
+#        if contador==3:
+#            print("sesion bloqueada.")
+#            break
+#        confirmacion=input("Confirme su contraseña: ")
+        
 #####Ejericio numero 10
 #print("HUCHA")
-#meta=int(input("Cuanto dinero quieres ahorrar?:"))
+#meta=float(input("Cuanto dinero quieres ahorrar?:"))
 #ahorrado=0
 #while True:
 #    ahorros=int(input("Cuantos euros quieres meter?:"))
@@ -124,7 +181,7 @@
 ######## Ejericio Extra
 #####Ejericio numero 10
 #print("HUCHA")
-#meta=int(input("Cuanto dinero quieres ahorrar?:"))
+#meta=float(input("Cuanto dinero quieres ahorrar?:"))
 #ahorrado=0
 #while True:
     
