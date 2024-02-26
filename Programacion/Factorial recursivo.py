@@ -13,4 +13,5 @@ while True:
             print("El factorial es:",factorial(numero))
             break
     except ValueError:
-        print("Ingresa un numero entero")
+        print("Ingresa un numero entero.")
+
