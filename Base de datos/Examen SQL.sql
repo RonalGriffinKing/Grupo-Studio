@@ -104,3 +104,98 @@ GRANT ALL PRIVILEGES ON APPLE.* TO 'nuevo_usuario'@'localhost';
 -- Refrescar los privilegios para que surtan efecto
 FLUSH PRIVILEGES;
 
+
+
+
+
+
+
+
+
+-- FUNCIONES MATEMATICAS
+SELECT ABS(-25);
+SELECT POW(2,10);
+SELECT sqrt(9);
+SELECT PI();
+SELECT ROUND(37.889);
+SELECT TRUNCATE(37.56734,4) ;-- ME LO DEJA CON LA CANTIDAD QUE INDIQUE
+SELECT CEIL(4.3);
+SELECT FLOOR(4.3);
+
+select 1+1 as result;
+
+SELECT MOD(29,2);
+
+-- control de flujos
+
+#Funciones 
+
+#operador CASE
+
+use instituto;
+select nombre,apellido1,apellido2,
+	CASE es_repetidor 
+		when "SI" then "Repite"
+        when "no" then "no repite"
+	end as repite
+    from alumno;
+    
+#Operador IF
+select nombre,apellido1,apellido2, 
+	if (es_repetidor="SI","Repite","No repite") as repite
+    from alumno;
+
+
+#operador ifnull
+select nombre,apellido1,apellido2,
+	ifnull(teléfono,"telefono no desponible")
+    from alumno;
+    
+select nullif("luis","luiscc");
+
+
+#errores tipicos
+select * from alumno where telefono = null;
+
+#forma correcta
+select * from alumno where telefono is null;
+
+#forma erronea
+select * from alumno where apellido1 = "s%";
+
+#forma correcta
+select * from alumno where apellido1 like "%s";
+
+
+
+
+
+
+
+use instituto;
+select * from alumno;
+
+-- variables globales y Variables de sesion—es necesario tener permiso de sesion permiso de administraor 
+
+SHOW VARIABLES;
+
+SET lc_time_names=‘es_ES’;
+
+SELECT @@SESSION.lc_time_names;
+SELECT @@GLOBAL.lc_time_names;
+
+set global time_zone=‘Europe/Madrid’;
+set time_zone=‘Erope/Madrid‘;
+select @@global.time_zone;
+select @@session.time_zone;
+
+
+select now();
+select current_date();
+select curtime();
+set lc_time_names=‘es_ES’;
+
+SELECT DAYNAME(‘2007-02-03’);
+
+
+
