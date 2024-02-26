@@ -103,3 +103,4 @@ GRANT ALL PRIVILEGES ON APPLE.* TO 'nuevo_usuario'@'localhost';
 
 -- Refrescar los privilegios para que surtan efecto
 FLUSH PRIVILEGES;
+
