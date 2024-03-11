@@ -1,7 +1,7 @@
 from sys import path
-path.append('c:\\Users\\brion\\OneDrive\\Documentos\\GitHub\\Grupo-Studio\\Programacion\\Trimestre 3\\py\\packages\\extra')
+path.append('c://Users//brion//OneDrive//Documentos//GitHub//Grupo-Studio//Programacion//Trimestre 3//py//packages/')
 
 
 import extra.iota
-print(extra.iota.funI())
+print(extra.iota.FunI())
 
