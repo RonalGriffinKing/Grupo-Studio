@@ -1,0 +1,22 @@
+
+        Arrays
+        unshift: agrega un elemento al principio
+        push: agrega un elemento al final
+        pop: elimina el ultimo elemento
+        shift: elimina el primer elemento
+        splice: elimina elementos
+        slice: crea una copia
+        join: une los elementos
+        sort: ordena los elementos
+        reverse: invierte los elementos
+        forEach: itera sobre los elementos
+        map: itera sobre los elementos y devuelve un nuevo arreglo
+        filter: itera sobre los elementos y devuelve un nuevo arreglo
+        find: itera sobre los elementos y devuelve el primer elemento que cumple la condicion
+        findIndex: itera sobre los elementos y devuelve el indice del primer elemento que cumple la condicion
+        includes: itera sobre los elementos y devuelve true si el elemento existe
+        every: itera sobre los elementos y devuelve true si todos los elementos cumple la condicion
+        some: itera sobre los elementos y devuelve true si al menos uno de los elementos cumple la condicion
+        reduce: itera sobre los elementos y devuelve un valor
+        reduceRight: itera sobre los elementos y devuelve un valor
+        lastIndexOf: itera sobre los elementos y devuelve el indice del elemento
