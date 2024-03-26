@@ -109,8 +109,8 @@ console.log(alumnos)
 console.log(alumnos[0].libros.libro1) //alumnos[0].libros.libro1
 
 
-//Ejericio 1 : dado el array de objetos recien creado, crea una funcion que devuelva un nuevo array con todos los alumnos casados
-console.log("Ejericio 1")
+//Ejercicio 1 : dado el array de objetos recien creado, crea una funcion que devuelva un nuevo array con todos los alumnos casados
+console.log("Ejercicio 1")
 function casados(alumnos){
     let casados=[]
     for(let i=0;i<alumnos.length;i++){
@@ -121,3 +121,5 @@ function casados(alumnos){
     return casados
 }
 console.log("Alumnos casados: ",casados(alumnos))
+
+//Ejercicio 2: 
