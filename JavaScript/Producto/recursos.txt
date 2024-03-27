@@ -1,0 +1,5 @@
+azul=https://th.bing.com/th/id/OIP.hTlsg5ZlqE8sagAvNuFNuAHaFR?rs=1&pid=ImgDetMain
+
+verde=https://www.pinpng.com/pngs/m/228-2280940_this-little-guy-is-from-stardew-valley-hd.png
+
+gay=https://ih1.redbubble.net/image.878990140.0692/bg,f8f8f8-flat,750x,075,f-pad,750x1000,f8f8f8.jpg

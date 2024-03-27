@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div id="principal">
+        <h1 id="title">Stardew Valley</h1>
+        <div id="caja">
+            <img id="img" src="https://i.etsystatic.com/36789232/r/il/351768/4122726944/il_1080xN.4122726944_627q.jpg" alt="">
+            <div id="contenedor">
+                <h3>JUNIMOS</h3>
+                <p>Un gran producto de una gran idea</p>
+                <h2 id="precio">25</h2>
+            </div>
+            <select  id="colores">
+                <option value="">Seleciona color</option>
+                <option value="azul">Azul</option>
+                <option value="rojo">Rojo</option>
+                <option value="rainbow">Rainbow</option>
+            </select>
+            <div>
+                <button class="botones" id="izquierda">-</button>
+                <span id="cantidad">1</span>
+                <button class="botones" id="derecha">+</button>
+            </div>
+            <div id="total_precio">
+                <button id="boton" onclick="calcular_total()">Total: <span id="total">0<span></button>
+                
+            </div>
+        </div>
+        
+    </div>
+
+    <script src="funciones.js"></script>
+</body>
+</html>

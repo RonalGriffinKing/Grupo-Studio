@@ -1,0 +1,81 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+#title{
+    color: #fddf48;
+    font-size: 50px;
+    font-weight: bold;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+#principal{
+    background-image: url(https://th.bing.com/th/id/R.4d87986a223e5486db4c7f5760bfe3d8?rik=vQlBpCAYZ7JFNg&riu=http%3a%2f%2fimg0.joyreactor.com%2fpics%2fpost%2ffull%2fgif-pixel-art-stardew-valley-games-4753936.gif&ehk=0x7%2fCLwkcgQFbU0Cg%2bgOVIKQbT9iilaPQ%2fmQ6QTU2xI%3d&risl=&pid=ImgRaw&r=0);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+
+}
+
+#colores{
+    width: 150px;
+    height: 30px;
+    font-size: 15px;
+    text-align: center;
+    border-radius: 50px;
+    border: none;
+    background-color: #ffe926;
+    padding: 5px;
+}
+
+.botones{
+    width: 30px;
+    height: 30px;
+    font-size: 15px;
+    text-align: center;
+    border-radius: 10px;
+    border: none;
+    padding: 5px;
+}
+
+#caja{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+    background-color: #ffffff;
+    padding: 10px;
+    border-radius: 20px;
+    width: 300px;
+    height: 500px;
+    font-weight: bold;
+}
+
+img{
+    width: 250px;
+    height: 250px;
+}
+
+#total_precio{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#boton{
+    cursor: pointer;
+    width: 150px;
+    height: 30px;
+    font-size: 20px;
+    text-align: center;
+    border-radius: 10px;
+    border: none;
+    padding: 5px;
+    background-color: #000000;
+    color: #ffffff;
+    font-weight: bold;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
