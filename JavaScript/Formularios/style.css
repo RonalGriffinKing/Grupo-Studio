@@ -15,7 +15,7 @@
 }
 
 #contenedor-buscotrabajo, #contenedor-buscopersonal, #contenedor-suscribirme{
-display: none;
+    display: none; 
 }
 #contenedor-buscotrabajo form{
     display: flex;
@@ -55,5 +55,18 @@ display: none;
     width: 300px;
     height: 400px;
     font-weight: bold;
+    
+
+}
+
+#selecion{
+    width: 200px;
+    height: 30px;
+    font-size: 15px;
+    text-align: center;
+    border-radius: 50px;
+    border: none;
+    background-color: #ffe926;
+    padding: 5px;
 
 }
