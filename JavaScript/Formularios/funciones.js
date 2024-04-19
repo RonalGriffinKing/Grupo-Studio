@@ -18,4 +18,10 @@ selecion.addEventListener("change",()=>{
         document.getElementById("contenedor-buscopersonal").style.display="none"
         document.getElementById("contenedor-suscribirme").style.display="block"
     }
+    if(selecion.value=="0"){
+        document.getElementById("contenedor-buscotrabajo").style.display="none"
+        document.getElementById("contenedor-buscopersonal").style.display="none"
+        document.getElementById("contenedor-suscribirme").style.display="none"
+    }
+
 })
