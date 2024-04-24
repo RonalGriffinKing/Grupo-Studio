@@ -1,0 +1,58 @@
+*{  
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#principal{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 40px;
+    background-color: #dfd004;
+    text-align: center;
+}
+
+#juego{
+    width: 100%;
+    height: 180px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+    gap: 10px;
+    background-color: #fefefe;
+    text-align: center;
+}
+
+
+#letra{
+    width: 100px;
+    height: 30px;
+    border-radius: 10px;
+    border: none;
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    border: 1px solid black;
+    font-size: 20px;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 20px;
+}
+
+
+#enviar{    
+    width: 100px;
+    height: 30px;
+    border-radius: 10px;
+    border: none;
+    font-family: 'Courier New', Courier, monospace;
+    background-color: #3f2220;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+}
+

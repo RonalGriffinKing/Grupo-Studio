@@ -1,0 +1,64 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+#principal{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+    background-color: #ffffff;
+    text-align: center;
+}
+
+#caja{
+    color: #fff;
+    font-size: 50px;
+    background-color: #222;
+    padding: 20px;
+    border-radius: 5px;
+    width: 250px;
+    height: 250px;
+}
+
+#clicks{
+    font-size: 30px;
+}
+
+#contador{
+    font-size: 50px;
+}
+
+.red{
+    background-color: red;
+}
+
+.blue{  
+    background-color: blue;
+}
+
+.green{
+    background-color: green;
+}
+
+.yellow{    
+    background-color: yellow;
+}
+
+.orange{       
+    background-color: orange;
+}
+
+.purple{
+    background-color: purple;
+}
+
+.pink{
+    background-color: pink;
+}
+
+
+
+
