@@ -1,25 +1,35 @@
-let letra = document.getElementById("letra").value.uppercase();
-let botonenviar=document.getElementById("enviar");
+let letra = document.getElementById("letra");
 
+let botonenviar=document.getElementById("enviar");
 let palabras=["HTML","CSS","JS"]
 let random = Math.floor(Math.random()*palabras.length);
 let palabraSecreta=palabras[random];
-
 let letrasAdivinadas = new Array(palabraSecreta.length).fill("_");
+let MostrarPalabra = document.getElementById("MostrarPalabra");
+MostrarPalabra.innerHTML=letrasAdivinadas.join(" ");
 
-let MostrarPalabra = document.getElementById("palabratag")
 
-MostrarPalabra.innerHTML="_ ".repeat(palabraSecreta.length);
+
 
 botonenviar.addEventListener("click",function(){
-    if(palabraSecreta.includes(letra)){
+    let letrita=letra.value.toUpperCase();
+    console.log(letrita);
+    if(palabraSecreta.includes(letrita)){
+        console.log("if");
         for(let i=0;i<palabraSecreta.length;i++){
-            if(palabraSecreta[i]==letra){
-                letrasAdivinadas[i]=letra;
-            }    
+            console.log("for");
+            if(palabraSecreta[i]==letrita){
+                letrasAdivinadas[i]=letrita;
+            } 
         }
-        document.getElementById("palabratag").innerHTML=letrasAdivinadas.join(" ");
+        MostrarPalabra.innerHTML=letrasAdivinadas.join(" ");    
+
+    }else{
+        console.log("else");
+        alert("la letra no existe");
     }
-
-
+    console.log(letrasAdivinadas);
+    if(letrasAdivinadas.join("")==palabraSecreta){
+        alert("Ganaste");
+    }
 })
