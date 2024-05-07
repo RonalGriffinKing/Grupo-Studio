@@ -16,7 +16,7 @@ class triangulo:
     
     def __repr__(self):
         clase=type(self).__name__
-        msg="{} ({},{},{})" #Constructor de la clase
+        msg="{},({},{},{})" #Constructor de la clase
         return msg.format(clase,self.base,self.altura,self.area())# Format nos permite insertar variables dentro de la cadena
 
     #Metodo que calcula el area
