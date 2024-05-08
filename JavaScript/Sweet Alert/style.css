@@ -1,0 +1,50 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    background-image: url(https://i.pinimg.com/originals/50/a0/6d/50a06dfa2614909f7def5ef2f61a701d.gif);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#Titulo{
+    font-size: 40px;
+    color: white;
+    margin-bottom: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+#Principal{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+}
+#contenedor{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px;
+    height: 150px;
+    background-color: rgba(97, 97, 97, 0.603);
+}
+button{
+    width: 100px;
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 5px;
+    background-color: rgb(5, 2, 2);
+    cursor: pointer;
+    color: white;
+    transition: 0.5s;
+}
+
+button:hover{
+    background-color: rgb(255, 255, 255);
+    color: black;
+}
