@@ -1,11 +1,46 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Flask y MySQL</title>
+    <script>
+        // Función para obtener datos del servidor
+        async function fetchData() {
+            try {
+                let response = await fetch('/data');
+                if (!response.ok) {
+                    throw new Error('Network response was not ok ' + response.statusText);
+                }
+                let data = await response.json();
+                console.log(data);
+                displayFirstObject(data);
+            } catch (error) {
+                console.error('There has been a problem with your fetch operation:', error);
+            }
+        }
+
+        // Función para mostrar el primer objeto en la página web
+        function displayFirstObject(data) {
+            if (data.length > 0) {
+                let firstObject = data[0];
+                let output = `
+                    <h2>${firstObject.Nombre}</h2>
+                    <p>Modelo: ${firstObject.Modelo}</p>
+                    <p>Color: ${firstObject.Color}</p>
+                    <p>Precio: $${firstObject.precio}</p>
+                    <img src="${firstObject.img}" alt="${firstObject.Nombre}" width="200">
+                `;
+                document.getElementById('data-container').innerHTML = output;
+            } else {
+                document.getElementById('data-container').innerHTML = '<p>No data found</p>';
+            }
+        }
+
+        // Llamar a la función fetchData al cargar la página
+        window.onload = fetchData;
+    </script>
 </head>
 <body>
-    
+    <h1>Datos desde Flask y MySQL</h1>
+    <div id="data-container"></div>
 </body>
 </html>
