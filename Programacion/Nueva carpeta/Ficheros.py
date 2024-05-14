@@ -18,5 +18,7 @@
 with open("/Users/brion/OneDrive/Documentos/GitHub/Grupo-Studio/Programacion/Nueva carpeta/Fichero.txt") as reader:
     dog=reader.readlines()
 
-with open("Fichero2.txt","wt") as writer:
+with open("/Users/brion/OneDrive/Documentos/GitHub/Grupo-Studio/Programacion/Nueva carpeta/Fichero2.txt","wt") as writer:
     writer.writelines(dog)
+    for d in dog:
+        writer.write([:]-1)
