@@ -1,17 +1,22 @@
-#buffer : Nos permite cargar datos en la memoria, con esto podremos leer o escribir en el archivo
+#with open("Fichero.txt") as reader:
+    #line=reader.readline()
 
-fichero=open("C:/Users/brion/OneDrive/Documentos/GitHub/Grupo-Studio/Programacion/Nueva carpeta/Fichero.txt","r")
+    #while line!="":
+        #print(line)
+      # line=reader.readline()
 
-palabra=fichero.read()
-print(palabra)
+   #for line in reader.readlines():
+      # print(line)
+    
+   # for line in reader:
+    #    print(line, end="")
 
-Lista=[]
 
-for linea in fichero:
-    buscarto=linea.find("Holi")
-    if buscarto != -1:
-        Lista.append(linea)
 
-print(Lista)
 
-fichero.close()
+
+with open("/Users/brion/OneDrive/Documentos/GitHub/Grupo-Studio/Programacion/Nueva carpeta/Fichero.txt") as reader:
+    dog=reader.readlines()
+
+with open("Fichero2.txt","wt") as writer:
+    writer.writelines(dog)
