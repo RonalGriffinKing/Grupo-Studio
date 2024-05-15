@@ -1,0 +1,320 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+#Principal{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#navegador{
+    width: 80%;
+    height: 100px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: fixed;
+    top: 10px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 20px;
+    
+}
+
+#logo{
+    width: 30%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 100%;
+    font-family: 'Vollkorn', serif;
+}
+#menu{
+    width: 60%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+#menu ul{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#menu ul li{
+    list-style: none;
+}
+#menu ul li a{
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+}
+#menu ul li a:hover{
+    color: red;
+}
+
+#search
+{
+    width: 100px;
+    border: 0px;
+    font-size: 20px; 
+    font-family: 'Vollkorn', serif;
+    border-bottom: 1px solid black;
+}
+
+.icono-buscar{
+    font-size: 20px;
+    margin-left: 20px;
+    cursor: pointer;
+    color: black;
+    margin-right: 10px;
+}
+
+
+#cuerpo{
+    width: 80%;
+    height: 80vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 100px;
+}
+
+#izquierda{
+    width: 45%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(190, 192, 192, 0.667);
+    border-radius: 10px;
+
+}
+#derecha{
+    width: 45%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#form{
+    width: 100%;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    gap: 10px;
+}
+
+.input{
+    width: 70%;
+    height: 30px;
+    border-radius: 10px;
+    border: none;
+    padding-left: 10px;
+    color: black;
+}
+
+.BTN{
+    width: 70%;
+    height: 30px;
+    border-radius: 10px;
+    border: none;
+    color: white;
+    background-color: rgb(13, 12, 12);
+    cursor: pointer;
+}
+
+#derecha1{  
+    width: 100%;
+    height: 45%;
+    background-color: rgba(180, 179, 182, 0.677);
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    color: white;
+    font-family: 'Vollkorn', serif;
+    
+}
+#derecha2{
+    width: 100%;
+    height: 49%;
+    background-color: rgba(86, 57, 12, 0.703);
+    margin: auto;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-family: 'Vollkorn', serif;
+}
+
+#ALBUMS{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+#ALBUM1{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}   
+#ALBUM2{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+#imagen-portada1{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+#imagen-portada2{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+
+
+#like1 {
+    opacity: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: opacity 0.5s;
+    background-color: rgba(215, 7, 166, 0.604);
+    position: absolute;
+    z-index: 1;
+}
+
+#like1:hover {
+    opacity: 1;
+}
+
+#like2 {
+    opacity: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: opacity 0.5s;
+    background-color: rgba(215, 7, 166, 0.604);
+    position: absolute;
+    z-index: 1;
+}
+
+#like2:hover {
+    opacity: 1;
+}
+
+
+
+#ALBUMF{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+
+    position: relative;
+
+}
+
+#imagen-Favorito{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 0.5s;
+}
+#filtro{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#circulo{
+    width: 500px;
+    height: 500px;
+    border-radius:50%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    z-index: -1;
+    position: absolute;
+    bottom: -150px;
+    left: -200px;
+}
+
+#circulo img{
+    width: 1000px;
+    height:1000px;
+
+    
+}
+
+#fondo1{
+    width: 50%;
+    height: 100vh;
+    z-index: -1;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-image:url(https://www.papelpintadoonline.com/67990-thickbox_default/papel-pintado-textur-walls-floral-flores-vintage-1862267.jpg)
+
+}
+
+#fondo2{
+    width: 50%;
+    height: 100vh;
+    z-index: -2;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-image:url(https://st2.depositphotos.com/13946484/49389/i/450/depositphotos_493892244-stock-photo-beautiful-romantic-flowers-wallpaper-colorful.jpg);
+    background-size: cover;
+}
+
